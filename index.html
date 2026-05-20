@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body class="page-body">
+    <!-- <header class="page-header"> -->
+    <!-- <div class="container"> -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#intro">Главная</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#about">Обо мне</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#skills">Навыки и стек</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#projects">Проекты</a>
+        </li>
+      </ul>
+      <div class="contact-button-container">
+        <a class="contact-button color-orange" href="#form">
+          <span class="contact-button-text">Связаться со мной</span>
+        </a>
+      </div>
+    </nav>
+    <!-- </div> -->
+    <!-- </header> -->
+
+    <main>
+      <!-- секция для главной страницы -->
+      <section id="main" class="container">
+        <h1 class="big-header color-black">Сергей Мирный</h1>
+
+        <p class="main-desc desc-font color-black">
+          Frontend developer, Backend - PhP,
+        </p>
+        <p class="main-desc2 desc-font color-black">
+          SQL databases: Postgress, MSSQL, MySQL
+        </p>
+        <img
+          class="main-pic"
+          src="assets/img/main.png"
+          alt="Абстрактное изображение компьютерного монитора"
+        />
+      </section>
+
+      <!-- секция «Обо мне» -->
+      <section id="about" class="container">
+        <div class="about-details background-turquoise">
+          <h1 class="big-header color-black">Привет, я веб-разработчик</h1>
+          <p class="about-desc desc-font color-black">
+            Занимаюсь разработкой информационных систем с нуля. Разработаны
+            проекты в образовательной сфере, агролизинге, области электронного
+            документооборота. Опыт в профессии более 30 лет.
+          </p>
+        </div>
+        <figure class="about-photo">
+          <img src="assets/img/photo.jpg" alt="Фотография автора портфолио" />
+        </figure>
+      </section>
+
+      <!-- Секция «Навыки и стек» -->
+      <section id="skills" class="container">
+        <h1 class="big-header color-black">Навыки и стек технологий</h1>
+
+        <div class="skills-table">
+          <div class="skills-card">
+            <section class="skills-card-section">
+              <img
+                class="skills-card-icon"
+                src="assets/icons/Development.svg"
+                alt="Иконка програмный код"
+              />
+
+              <h2 class="skills-card-header color-black">Разработка сайтов</h2>
+              <!-- <p class="skills-card-text color-black">
+                фронтенд, бэкенд, базы данных, DevOps.
+              </p> -->
+              <ul class="skills-card-list color-black">
+                <li>фронтенд</li>
+                <li>бэкенд</li>
+                <li>базы данных</li>
+                <li>DevOps</li>
+              </ul>
+            </section>
+
+            <section class="skills-card-section">
+              <h3 class="skills-card-subheader color-orange">Языки</h3>
+              <ul class="skills-card-list color-black">
+                <li>HTML, CSS, JS, PhP, VFP</li>
+              </ul>
+              <h3 class="skills-card-subheader color-orange">Инструменты</h3>
+              <!-- <ul class="skills-card-list color-black">
+                <li>VS Code</li>
+                <li>PhPStorm</li>
+                <li>Github</li>
+                <li>Git</li>
+              </ul> -->
+              <p class="skills-card-text color-black">
+                VS Code, PhPStorm, Github, Git
+              </p>
+            </section>
+          </div>
+
+          <div class="skills-card">
+            <section class="skills-card-section">
+              <img
+                class="skills-card-icon"
+                src="assets/icons/Design.svg"
+                alt="Иконка кисть на фоне компьютера"
+              />
+              <h2 class="skills-card-header color-black">Дизайн</h2>
+              <p class="skills-card-text color-black">UX/UI</p>
+            </section>
+            <section class="skills-card-section">
+              <h3 class="skills-card-subheader color-orange">Инструменты</h3>
+              <ul class="skills-card-list color-black">
+                <li>Figma, Photoshop, Pixco</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="skills-card">
+            <section class="skills-card-section">
+              <img
+                class="skills-card-icon"
+                src="assets/icons/SoftSkills.svg"
+                alt="Иконка коммуникация"
+              />
+              <h2 class="skills-card-header color-black">Soft skills</h2>
+              <p class="skills-card-text color-black">
+                Умение слушать и воспринимать информацию, работать в команде,
+                планировать и расставлять приоритеты
+              </p>
+            </section>
+            <section class="skills-card-section">
+              <h3 class="skills-card-subheader color-orange">Навыки</h3>
+              <ul class="skills-card-list color-black">
+                <li>аналитика</li>
+                <li>планирование</li>
+                <li>организация</li>
+                <li>контроль проектов</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция «Проекты» -->
+      <section id="projects" class="container">
+        <h1 class="big-header color-black">Проекты</h1>
+        <div class="projects-display">
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/Building-houses/">
+              <figcaption class="project-title">Строительство домов</figcaption>
+              <img
+                src="assets/img/Building-houses.jpg"
+                alt="Скриншот проекта Строительство домов"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/macaroon/">
+              <figcaption class="project-title">
+                Французские пирожные Макарун
+              </figcaption>
+              <img
+                src="assets/img/Macaroon.jpg"
+                alt="Скриншот проекта Французские пирожные Макарун"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/office-chairs/">
+              <figcaption class="project-title">Офисные кресла</figcaption>
+              <img
+                src="assets/img/Office-chair.jpg"
+                alt="Скриншот проекта Офисные кресла"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/burgers/">
+              <figcaption class="project-title">Бургеры</figcaption>
+              <img src="assets/img/Burger.jpg" alt="Скриншот проекта Бургеры" />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/ordering-sushi/">
+              <figcaption class="project-title">Суши</figcaption>
+              <img
+                src="assets/img/Sushi.jpg"
+                alt="Скриншот проекта Покупка Суши"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/cappadocia/">
+              <figcaption class="project-title">Каппадокия</figcaption>
+              <img
+                src="assets/img/Cappadocia.jpg"
+                alt="Скриншот проекта Каппадокия"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/bright-panel/">
+              <figcaption class="project-title">Дизайн интерьера</figcaption>
+              <img
+                src="assets/img/Design-Interior.jpg"
+                alt="Скриншот проекта Дизайн интерьера"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/online-cinema/">
+              <figcaption class="project-title">Онлайн кинотеатр</figcaption>
+              <img
+                src="assets/img/Cinema.jpg"
+                alt="Скриншот проекта Онлайн кинотеатр"
+              />
+            </a>
+          </figure>
+          <figure class="projects-card">
+            <a href="https://mirserg.github.io/clinic/">
+              <figcaption class="project-title">
+                Стоматологическая клиника
+              </figcaption>
+              <img
+                src="assets/img/Clinic.jpg"
+                alt="Скриншот проекта Стоматологическая клиника"
+              />
+            </a>
+          </figure>
+        </div>
+
+        <a
+          class="projects-button color-orange"
+          href="https://github.com/MirSerg"
+        >
+          <span class="projects-button-text">Посмотреть на Github</span>
+        </a>
+      </section>
+
+      <!-- Секция с формой обратной связи -->
+      <section id="form" class="container">
+        <div class="form-details container background-turquoise">
+          <h1 class="big-header color-black">Хотите заказать сайт?</h1>
+          <p class="form-details-text desc-font color-black">
+            Напишите мне, чтобы обсудить детали.
+          </p>
+        </div>
+
+        <div id="contact-form" class="form-container">
+          <img
+            class="form-pic"
+            src="assets/img/Form.png"
+            alt="Абстрактное изображение компьютера и рук печатающих на клавиатуре"
+          />
+
+          <form class="form">
+            <fieldset class="form-sender-data">
+              <label class="form-field" for="name">
+                <span class="form-label color-black">Имя</span>
+                <input class="form-input color-black" type="text" name="name" />
+              </label>
+
+              <label class="form-field" for="email">
+                <span class="form-label color-black">E-mail</span>
+                <input
+                  class="form-input color-black"
+                  type="email"
+                  name="email"
+                />
+              </label>
+            </fieldset>
+
+            <fieldset class="form-text-body">
+              <label class="form-field" for="body">
+                <span class="form-label color-black"
+                  >Расскажите про свою задачу</span
+                >
+                <textarea class="form-input color-black" name="body"></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset class="form-submit">
+              <button class="form-button color-orange" type="submit">
+                <span class="form-button-text">Отправить</span>
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <!-- Секция с отзывами -->
+      <section id="reviews" class="container">
+        <h1 class="big-header color-black">Отзывы</h1>
+        <p class="reviews-desc desc-font color-black">
+          Люди, с которыми я работал, остаются довольны результатом.
+        </p>
+
+        <figure class="reviews-card">
+          <div class="reviews-photo">
+            <img
+              src="assets/img/peoples-reviews.jpg"
+              alt="Фото автора отзыва"
+            />
+          </div>
+
+          <figcaption class="reviews-caption">
+            <p class="reviews-info color-black">
+              Арина, Григорий, Алексей, Маша, Даша
+            </p>
+            <p class="reviews-info color-black">
+              Компания "Мир творчества", г. Санкт-Петербург
+            </p>
+            <p class="reviews-text color-black">
+              Хотели бы выразить благодарность за отличную работу. Заказали
+              корпоративный сайт.
+            </p>
+            <p class="reviews-text color-black">
+              Сроки выполнения работ минимальные. Подобрали оптимальный формат,
+              разработали стиль, со вкусом оформили содержание. Со знанием дела
+              консультировали на каждом этапе разработки, предлагая более
+              грамотные решения. Планируем и дальше сотрудничать. Рекомендуем
+              ...
+            </p>
+          </figcaption>
+        </figure>
+
+        <div class="reviews-toggle">
+          <button class="reviews-toggle-button" type="button">
+            <img
+              class="reviews-toggle-arrow"
+              src="assets/icons/Arrow-L.svg"
+              alt="Стрелка влево"
+            />
+            <img
+              class="reviews-toggle-arrow icon-hover"
+              src="assets/icons/Arrow-L-white.svg"
+              alt="Стрелка влево"
+            />
+          </button>
+
+          <button class="reviews-toggle-button" type="button">
+            <img
+              class="reviews-toggle-arrow"
+              src="assets/icons/Arrow-R.svg"
+              alt="Стрелка вправо"
+            />
+            <img
+              class="reviews-toggle-arrow icon-hover"
+              src="assets/icons/Arrow-R-white.svg"
+              alt="Стрелка вправо"
+            />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <aside id="letstalk" class="container">
+      <div class="letstalk-box">
+        <h2 class="letstalk-header">Договоримся о сотрудничестве</h2>
+        <p class="letstalk-text">
+          У вас есть идея проекта или предложение о работе? Напишите мне.
+          <br />Я открыт к разным вариантам сотрудничества.
+        </p>
+        <div class="letstalk-button-container">
+          <a class="letstalk-button" href="#form">
+            <span class="letstalk-button-text">Связаться с разработчиком</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="footer-socials">
+        <!--
+                    Для иконок соцсетей также добавляем ве картинки сразу.
+                    Одна из них скрыта и используется для эффекта hover (подробнее см. выше). 
+                    Добавляем класс icon-hover, такой же, как и в случае выше.
+                    Но поскольку в CSS-файле он используется только в комбинации с классом и селектором
+                    hover на родительском элементе <button>, общих стилей у иконок 
+                    соцсетей и кнопок-стрелок в отзывах нет.
+                -->
+        <a class="footer-social-container" href="https://t.me/example">
+          <img class="footer-social-icon" src="assets/icons/TG.svg" />
+          <img
+            class="footer-social-icon icon-hover"
+            src="assets/icons/TG-white.svg"
+          />
+        </a>
+        <a
+          class="footer-social-container"
+          href="https://habr.com/ru/users/example"
+        >
+          <img class="footer-social-icon" src="assets/icons/Habr.svg" />
+          <img
+            class="footer-social-icon icon-hover"
+            src="assets/icons/Habr-white.svg"
+          />
+        </a>
+
+        <!-- 
+                    Добавляем ссылку на адрес электронной почты.
+                    Вместо http в href используем протокол mailto, который открывает 
+                    почтовый клиент по умолчанию на устройстве пользователя. 
+                    Например, Outlook на Windows или приложение «Почта» на iOS.
+                -->
+        <a class="footer-social-container" href="mailto:someone@example.com">
+          <img class="footer-social-icon" src="assets/icons/Email.svg" />
+          <img
+            class="footer-social-icon icon-hover"
+            src="assets/icons/Email-white.svg"
+          />
+        </a>
+      </div>
+
+      <p class="footer-links color-black">
+        Изображения и иконки:
+        <a
+          href="https://ru.freepik.com/free-vector/software-integration-concept-illustration_18352184.htm#page=2&query=веб-разработка&position=7&from_view=search&track=sph"
+        >
+          Изображение-1 от Storyset на Freepik.
+        </a>
+        <a
+          href="https://ru.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#&position=12&from_view=author"
+        >
+          Изображение-2 от Storyset на Freepik.
+        </a>
+        <a
+          href="https://www.flaticon.com/ru/free-icons/html"
+          title="html иконки"
+        >
+          Иконка "Html" oT Frey Wazza a Flaticon.
+        </a>
+        <a
+          href="https://www.flaticon.com/ru/free-icons/"
+          title="телеграмма иконки"
+        >
+          Иконка «Телеграм» от Freepik на Flaticon.
+        </a>
+        <a
+          href="https: //www.flaticon.com/ru/free-icons/"
+          title="общение иконки"
+        >
+          Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.
+        </a>
+        <a
+          href="https://www.flaticon.com/ru/free-icons/-"
+          title="Дизайн сайта иконки"
+        >
+          Иконка «Дизайн сайта» от Freepik на Flaticon.
+        </a>
+        <a
+          href="https://www.flaticon.com/ru/free-icons/-"
+          title=" Эл. адрес иконки"
+        >
+          Иконка «Эл. адрес» от Those Icons a Flaticon.
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

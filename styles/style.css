@@ -1,0 +1,729 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: TildaSans;
+  src: url("../assets/fonts/TildaSans-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+  /* color: inherit; */
+}
+button,
+input,
+textarea {
+  outline: none;
+  appearance: none;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.color-black {
+  color: #141c3a;
+}
+.color-orange {
+  color: #ff9235;
+}
+.background-turquoise {
+  background-color: #5dd9c8;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-header {
+  padding: 0;
+  margin: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 81px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc-font {
+  font-family: "TildaSans", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+/* .page-header {
+    padding: 20px 0;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.color-black {
+  /* черный цвет текста */
+  color: #141c3a;
+}
+.color-orange {
+  /* оранжевый цвет текста */
+  color: #ff9235;
+}
+.background-turquoise {
+  /* бирюзовый цвет фона */
+  background-color: #5dd9c8;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.navbar-list {
+  flex-wrap: wrap;
+  list-style: none;
+  width: 50%;
+  margin: 45px 0 45px 25%;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navbar-link {
+  color: #000;
+  text-decoration: none;
+  font-family: "TildaSans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+/* .navbar-link:hover {
+  opacity: 0.5;
+} */
+
+.contact-button {
+  border: 2px solid #ff9235;
+  padding: 9px 22px;
+  border-radius: 15px;
+  margin: 0;
+  text-decoration: none;
+}
+.contact-button:hover {
+  background-color: #ff9235;
+  color: #ffffff;
+}
+.contact-button-text {
+  font-family: "TildaSans", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 27px;
+  color: inherit;
+}
+.contact-button-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  padding: 80px 0 0 0;
+}
+.main-desc {
+  width: 70%;
+  margin: 48px 0 0 0;
+  padding: 0;
+}
+.main-desc2 {
+  width: 70%;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.main-pic {
+  max-width: 80vw;
+  margin: 66px 0 0 0;
+  padding: 0;
+}
+
+.about-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0 0 0;
+}
+.about-desc {
+  width: 70%;
+  margin: 40px 0 182px 0;
+  padding: 0;
+}
+.about-photo {
+  width: 30vw;
+  height: 40vw;
+  margin: -10vw 0 76px 0;
+  padding: 0;
+  border: 3px solid #5dd9c8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#skills .big-header {
+  margin: 60px 0;
+}
+.skills-table {
+  width: 80%;
+  border-radius: 12px;
+  border: 1px solid #5dd9c8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 70px;
+}
+.skills-card {
+  border-left: 1px solid #5dd9c8;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 70px 70px 0 70px;
+}
+.skills-card:first-child {
+  border-left: 0px;
+}
+.skills-card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.skills-card-icon {
+  width: 72px;
+  height: 72px;
+}
+.skills-card-header {
+  padding: 0;
+  margin: 25px 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+}
+.skills-card-text {
+  font-family: "TildaSans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 12px 0px;
+  width: 100%;
+}
+.skills-card-subheader {
+  padding: 0;
+  margin: 12px 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+}
+.skills-card-list {
+  list-style: none;
+  font-family: "TildaSans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 32px 0;
+  width: 100%;
+}
+.skills-card-list:last-child {
+  padding-bottom: 0;
+}
+
+#projects .big-header {
+  margin: 70px 0;
+}
+
+.projects-display {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.projects-card {
+  padding: 0;
+  margin: 0;
+  width: 24vw;
+  height: 18.5vw;
+  box-sizing: border-box;
+  border: 3px solid #8063a6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  text-align: center;
+  padding: 10px;
+  background-color: #fbe7c98f;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  font-family: inherit;
+  order: 1;
+}
+
+.projects-card a {
+  display: block;
+  line-height: 0;
+  flex: 1;
+  min-height: 0;
+}
+
+.projects-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projects-button {
+  padding: 15px 40px;
+  margin: 100px 0;
+  border: 2px solid #ff9235;
+  border-radius: 15px;
+}
+.projects-button:hover {
+  background-color: #ff9235;
+  color: #ffffff;
+}
+.projects-button-text {
+  font-family: "TildaSans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: inherit;
+}
+
+#form .big-header {
+  text-transform: none;
+  margin-bottom: 45px;
+}
+.form-details {
+  padding: 64px 0;
+}
+.form-details-text {
+  padding: 0;
+  margin: 0;
+}
+.form-pic {
+  width: 35vw;
+  height: 35vw;
+  margin-left: 5vw;
+}
+.form-container {
+  width: 100%;
+  padding: 100px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.form {
+  margin: 0 5vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-sender-data {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-field {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form-label {
+  margin: 0 0 10px 4px;
+  padding: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+.form-input {
+  margin: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 54px;
+  border: 1px solid #ff9235;
+  border-radius: 12px;
+}
+.form-sender-data .form-input {
+  min-width: 150px;
+  max-width: 20vw;
+  padding: 0 6px;
+  width: 380px;
+}
+.form-sender-data .form-field:first-child {
+  padding-right: 10px;
+}
+.form-text-body {
+  margin: 48px 0 0 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.form-text-body .form-input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+}
+.form-submit {
+  margin: 48px 0 0 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.form-button {
+  padding: 15px 40px;
+  margin: 0;
+  background-color: #ffffff;
+  border: 2px solid #ff9235;
+  border-radius: 15px;
+}
+.form-button:hover {
+  background-color: #ff9235;
+  color: #ffffff;
+}
+.form-button-text {
+  font-family: "TildaSans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: inherit;
+}
+
+#reviews .big-header {
+  margin: 0 0 64px 0;
+}
+.reviews-desc {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+.reviews-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-photo {
+  /* используем vw, чтобы сохранить соотношение 
+     * сторон картинки, подробнее см. выше. */
+  width: 20vw;
+  height: 15vw;
+  margin: 35px 0 0 0;
+  padding: 0;
+  border: 3px solid #5dd9c8;
+  border-radius: 10px;
+  /* Про overflow: hidden для корректного
+     * скругления углов см. выше. */
+  overflow: hidden;
+}
+.reviews-photo img {
+  height: 100%;
+  width: 100%;
+  /* Про object-fit: cover для корректного
+     * скругления углов см. выше. */
+  object-fit: cover;
+}
+.reviews-caption {
+  margin: 0;
+  padding: 0;
+}
+.reviews-text {
+  margin: 0;
+  padding: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 54px;
+  text-align: center;
+}
+.reviews-info {
+  margin: 0;
+  padding: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews-caption p:nth-of-type(2) {
+  margin-bottom: 20px;
+}
+
+.reviews-toggle {
+  margin: 41px 0 45px 0;
+  /* Задаем конкретный размер кнопок, так как они не меняются 
+     * в зависимости от размера экрана. 
+     * В ширину включаем размер двух кнопок и отступ между ними.
+     * Задаем space-between, чтобы кнопки прижались к краям 
+     * родительского контейнера и между ними появился отступ. */
+  width: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reviews-toggle-button {
+  padding: 0 6px;
+  height: 40px;
+  border: 2px solid #ff9235;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.reviews-toggle-button:hover {
+  background-color: #ff9235;
+}
+/* Заменяем одну иконку на вторую, с другим
+ * цветом при наведении. Подробнее см. HTML. */
+.reviews-toggle-button:hover .reviews-toggle-arrow {
+  display: none;
+}
+.reviews-toggle-button:hover .icon-hover {
+  display: block;
+}
+
+.letstalk-box {
+  /* Задаем отрицательный margin, чтобы создать наложение на предыдущую секцию. */
+  margin: 0;
+  padding: 12px 3vw;
+  background-color: #8063a6;
+  border-radius: 12px;
+  width: 80%;
+  /* Задаем фиксированную высоту, чтобы было проще настроить
+     * наложение секции на следующую. */
+  height: 166px;
+  /* Используем flex, чтобы отступы по краям и между элементами были одинаковыми. */
+  display: flex;
+  flex-direction: row;
+  /* gap равен горизонтальному padding */
+  gap: 3vw;
+}
+.letstalk-header {
+  margin: auto 0;
+  color: #ffffff;
+  font-family: "TildaSans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+}
+.letstalk-text {
+  margin: auto 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "TildaSans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+.letstalk-button {
+  margin: 0;
+  padding: 15px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  color: #ffffff;
+}
+.letstalk-button:hover {
+  background-color: #ffffff;
+  color: #8063a6;
+}
+.letstalk-button-text {
+  font-family: "TildaSans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  white-space: nowrap;
+  color: inherit;
+}
+.letstalk-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin: -95px 0 0 0;
+  padding: 95px 0 0 0;
+  background-color: #5dd9c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-socials {
+  margin: 60px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.footer-social-container {
+  height: 48px;
+  width: 48px;
+  box-sizing: border-box;
+  margin: 0 15px;
+  padding: 4px;
+  border: 2px solid #141c3a;
+  border-radius: 48px;
+}
+.footer-social-container:hover {
+  background-color: #8063a6;
+  border: 2px solid #8063a6;
+}
+.footer-social-icon {
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+.footer-social-container:hover .footer-social-icon {
+  display: none;
+}
+.icon-hover {
+  display: none;
+}
+.footer-social-container:hover .icon-hover {
+  display: block;
+}
+.footer-links {
+  margin: 30px 0 45px 0;
+  padding: 0;
+  font-family: "TildaSans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
