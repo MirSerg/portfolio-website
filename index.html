@@ -392,7 +392,11 @@
                     hover на родительском элементе <button>, общих стилей у иконок 
                     соцсетей и кнопок-стрелок в отзывах нет.
                 -->
-        <a class="footer-social-container" href="https://t.me/example">
+        <a
+          class="footer-social-container"
+          href="https://t.me/SergMir"
+          target="_blank"
+        >
           <img class="footer-social-icon" src="assets/icons/TG.svg" />
           <img
             class="footer-social-icon icon-hover"
@@ -401,7 +405,8 @@
         </a>
         <a
           class="footer-social-container"
-          href="https://habr.com/ru/users/example"
+          href="https://habr.com/ru"
+          target="_blank"
         >
           <img class="footer-social-icon" src="assets/icons/Habr.svg" />
           <img
@@ -416,11 +421,19 @@
                     почтовый клиент по умолчанию на устройстве пользователя. 
                     Например, Outlook на Windows или приложение «Почта» на iOS.
                 -->
-        <a class="footer-social-container" href="mailto:someone@example.com">
+        <a class="footer-social-container" href="mailto:sergzserg@rambler.ru">
           <img class="footer-social-icon" src="assets/icons/Email.svg" />
           <img
             class="footer-social-icon icon-hover"
             src="assets/icons/Email-white.svg"
+          />
+        </a>
+
+        <a class="footer-social-container oss-icon" href="#" id="ossLink">
+          <img class="footer-social-icon" src="assets/icons/OSS.svg" />
+          <img
+            class="footer-social-icon icon-hover"
+            src="assets/icons/OSS-white.svg"
           />
         </a>
       </div>
@@ -476,32 +489,6 @@
       </svg>
     </a>
 
-    <script>
-      (function () {
-        const scrollBtn = document.getElementById("scrollToTopBtn");
-
-        // Показываем/скрываем кнопку при скролле
-        function toggleScrollButton() {
-          if (window.scrollY > 300) {
-            scrollBtn.classList.add("show");
-          } else {
-            scrollBtn.classList.remove("show");
-          }
-        }
-
-        // Плавная прокрутка наверх
-        function scrollToTop(e) {
-          e.preventDefault();
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }
-
-        // Добавляем обработчики событий
-        window.addEventListener("scroll", toggleScrollButton);
-        scrollBtn.addEventListener("click", scrollToTop);
-      })();
-    </script>
+    <script src="scripts/oss-modal.js"></script>
   </body>
 </html>
