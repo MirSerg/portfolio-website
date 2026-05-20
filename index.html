@@ -469,5 +469,39 @@
         </a>
       </p>
     </footer>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" aria-label="Наверх">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4l-8 8h6v8h4v-8h6z" />
+      </svg>
+    </a>
+
+    <script>
+      (function () {
+        const scrollBtn = document.getElementById("scrollToTopBtn");
+
+        // Показываем/скрываем кнопку при скролле
+        function toggleScrollButton() {
+          if (window.scrollY > 300) {
+            scrollBtn.classList.add("show");
+          } else {
+            scrollBtn.classList.remove("show");
+          }
+        }
+
+        // Плавная прокрутка наверх
+        function scrollToTop(e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+
+        // Добавляем обработчики событий
+        window.addEventListener("scroll", toggleScrollButton);
+        scrollBtn.addEventListener("click", scrollToTop);
+      })();
+    </script>
   </body>
 </html>
